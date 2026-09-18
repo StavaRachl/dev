@@ -1,0 +1,107 @@
+.hero {
+    position: relative;
+
+    min-height: calc(100vh - 70px);
+
+    margin-top: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+#particles-js {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 0;
+}
+
+.hero__content {
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+    max-width: 900px;
+
+    padding: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 70px;
+}
+
+.hero__image img {
+    width: 240px;
+    height: 240px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(255, 255, 255, 0.15);
+
+    box-shadow:
+            0 0 40px rgba(255, 255, 255, 0.08);
+}
+
+.hero__text {
+    max-width: 500px;
+}
+
+.hero__text h1 {
+    font-size: clamp(42px, 6vw, 72px);
+
+    line-height: 1;
+
+    margin-bottom: 15px;
+}
+
+.hero__text h2 {
+    font-size: clamp(20px, 3vw, 30px);
+
+    color: #aaa;
+
+    margin-bottom: 20px;
+}
+
+.hero__text p {
+    color: #888;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+.hero__links {
+    display: flex;
+    gap: 15px;
+}
+
+.hero__links a {
+    padding: 10px 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+
+    color: white;
+    text-decoration: none;
+
+    transition:
+            background 0.2s ease,
+            border-color 0.2s ease;
+}
+
+.hero__links a:hover {
+    background: rgba(255, 255, 255, 0.08);
+
+    border-color: rgba(255, 255, 255, 0.3);
+}

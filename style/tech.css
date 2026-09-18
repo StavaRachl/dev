@@ -1,0 +1,119 @@
+.tech-stack {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+    padding: 80px 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.tech-stack h2 {
+    grid-column: 1 / -1;
+
+    margin: 0 0 25px;
+
+    text-align: center;
+    font-size: 2.2rem;
+    color: #fff;
+}
+
+.tech-item {
+    min-height: 140px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow:
+            0 10px 30px rgba(0, 0, 0, 0.15),
+            inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+    transition:
+            transform 0.25s ease,
+            background 0.25s ease,
+            border-color 0.25s ease,
+            box-shadow 0.25s ease;
+}
+
+.tech-item img {
+    width: 58px;
+    height: 58px;
+
+    object-fit: contain;
+
+    transition:
+            transform 0.25s ease,
+            filter 0.25s ease;
+}
+
+.tech-item span {
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    text-align: center;
+}
+
+/* Hover */
+
+.tech-item:hover {
+    transform: translateY(-6px);
+
+    background: rgba(255, 255, 255, 0.09);
+    border-color: rgba(255, 255, 255, 0.22);
+
+    box-shadow:
+            0 18px 40px rgba(0, 0, 0, 0.25),
+            0 0 25px rgba(255, 255, 255, 0.04);
+}
+
+.tech-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Tablet */
+
+@media (max-width: 850px) {
+    .tech-stack {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .tech-stack {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 60px 0;
+    }
+
+    .tech-item {
+        min-height: 125px;
+        padding: 15px;
+    }
+
+    .tech-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .tech-stack h2 {
+        font-size: 1.8rem;
+    }
+}

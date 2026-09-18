@@ -1,225 +1,299 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>StavaRaChI</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/tech.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/adaptive.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/hero.css">
+    <link rel="stylesheet" href="style/github.css">
+    <link rel="stylesheet" href="style/footer.css">
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
+    <title>StavaRaChI - Java Backend Developer</title>
 </head>
+
 <body>
-<div class="noise"></div>
-<header>
-    <div class="logo">
-        <span>&lt;</span> StavaRaChI <span>&gt;</span>
-    </div>
 
-    <div class="navbar">
-        <a href="#about">about me</a>
-        <a href="#stack">skills</a>
-        <a href="#projects">projects</a>
-        <a href="#footer">contact</a>
-    </div>
-</header>
-<main>
-    <div class="hero">
-        <div class="title">
-            <h1>StavaRaChI</h1>
-            <h2>Java developer</h2>
-            <div class="buttons">
-                <a href="#projects" class="primary-btn">View projects</a>
-                <a href="https://github.com/StavaRachl" class="secondary-btn" target="_blank">GitHub</a>
-            </div>
-            <p>A 17 y.o. Java and Python developer studying at college for a degree in Information Systems and
-                Programming.</p>
-        </div>
-    </div>
-    <section class="about" id="about">
-        <div class="about-me">
-            <div class="about-me-title">
-                <h1>About me</h1>
-                <p>
-                    I'm a 17-year-old Java and Python developer living in Khabarovsk and studying at a technical college
-                    majoring in Information Systems and Programming.
-                </p>
-                <p>
-                    I started programming at age 15 as a front-end developer.
-                </p>
-                <p>
-                    At age 16, I switched to back-end development using the Java programming language.
-                </p>
-                <p>
-                    I currently develop Telegram bots in Java and Python, and also practice creating back-end websites
-                    and desktop applications.
-                </p>
-            </div>
-            <div class="card-am">
-                <div class="about-me-card">
-                    <h1>3+</h1>
-                    <p>Years</p>
-                </div>
-                <div class="about-me-card">
-                    <h1>5</h1>
-                    <p>Projects</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="wrapper">
 
-    <section id="stack">
-        <h1>Skills</h1>
+    <header class="navbar">
+        <nav class="navbar__container">
 
-        <div class="skills">
-            <div class="skill-card">
-                <i class="fa-brands fa-java" style="font-size: 50px"></i>
-                <h3>Java</h3>
-                <p>Backend, Telegram bots, Minecraft modding</p>
-            </div>
-            <div class="skill-card">
-                <i class="fa-brands fa-python" style="font-size: 50px"></i>
-                <h3>Python</h3>
-                <p>Telegram bots, Scripting</p>
-            </div>
-            <div class="skill-card">
-                <i class="fa-brands fa-js" style="font-size: 50px"></i>
-                <h3>JavaScript</h3>
-                <p>Frontend</p>
-            </div>
-            <div class="skill-card">
-                <i class="fa-brands fa-git-alt" style="font-size: 50px; padding-right: 10px;"></i>
-                <i class="fa-brands fa-github" style="font-size: 50px"></i>
-                <h3>Git / Github</h3>
-                <p>Version control</p>
-            </div>
-            <div class="skill-card">
-                <i class="fa-regular fa-note-sticky"></i>
-                <h3>Notion</h3>
-                <p>ToDo</p>
-            </div>
-            <div class="skill-card">
-                <i class="fa-solid fa-terminal"></i>
-                <h3>Termius</h3>
-                <p>Server control</p>
-            </div>
-            <div class="skill-card">
-                <i class="fa-brands fa-windows"></i>
-                <h3>Windows</h3>
-                <p>Main OS</p>
-            </div>
-            <div class="skill-card">
-                <i class="fa-brands fa-linux"></i>
-                <h3>Linux</h3>
-                <p>Work OS</p>
-            </div>
-        </div>
-    </section>
+            <a href="#home" class="navbar__logo">
+                StavaRaChI
+            </a>
 
-    <section id="projects">
-        <h1>Projects</h1>
-        <div class="projects">
-            <div class="project-card">
-                <div class="project-left">
-                    <i class="fa-brands fa-telegram project-icon"></i>
+            <div class="navbar__links">
+                <a href="#stack">Stack</a>
+                <a href="#github">GitHub</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="hero" id="home">
+
+            <div id="particles-js"></div>
+
+            <div class="hero__content">
+
+                <div class="hero__image">
+                    <img
+                            src="img/avatar.png"
+                            alt="StavaRaChI"
+                    >
                 </div>
 
-                <div class="project-right">
-                    <div class="project-links">
-                        <a href="http://telegram.me/khtcbot" target="_blank">
+                <div class="hero__text">
+
+                    <h1>StavaRaChI</h1>
+
+                    <h2>Java Backend Developer</h2>
+
+                    <p>
+                        Developing Telegram bots, backend
+                        and fullstack applications.
+                    </p>
+
+                    <div class="hero__links">
+                        <a href="https://github.com/StavaRachl"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub
+                        </a>
+
+                        <a href="https://t.me/StavaRaChiii"
+                           target="_blank"
+                           rel="noopener noreferrer">
                             Telegram
                         </a>
-                        <a href="https://github.com/StavaRachl/ScheduleBotHTK" target="_blank">
-                            GitHub
+
+                        <a href="https://vk.com/stavarachiii"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            VK
                         </a>
                     </div>
 
-                    <h2 class="project-title">Schedule Bot HTK</h2>
-                    <p class="project-stack">Java, Maven, Telegram Bots API</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-left">
-                    <i class="fa-brands fa-telegram project-icon"></i>
                 </div>
 
-                <div class="project-right">
-                    <div class="project-links">
-                        <a href="https://github.com/StavaRachl/WeatherApp" target="_blank">
-                            GitHub
-                        </a>
+            </div>
+
+        </section>
+
+        <section class="tech-stack" id="stack">
+            <h2>Tech Stack</h2>
+
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                     alt="Java"/>
+                <span>Java</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                     alt="Python">
+                <span>Python</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                     alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+                     alt="Spring"/>
+                <span>Spring</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg"
+                     alt="IntelliJ IDEA">
+                <span>IntelliJ IDEA</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg"
+                     alt="PyCharm">
+                <span>PyCharm</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webstorm/webstorm-original.svg"
+                     alt="WebStorm">
+                <span>WebStorm</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg"
+                     alt="Blender">
+                <span>Blender</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+                     alt="Postman">
+                <span>Postman</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                     alt="Node.js"/>
+                <span>Node.js</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                     alt="PostgreSQL">
+                <span>PostgreSQL</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg"
+                     alt="SQLite">
+                <span>SQLite</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg"
+                     alt="Maven">
+                <span>Maven</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gradle/gradle-original.svg"
+                     alt="Gradle"/>
+                <span>Gradle</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/debian/debian-original.svg"
+                     alt="Debian"/>
+                <span>Debian</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg"
+                     alt="Windows 11"/>
+                <span>Windows 11</span>
+            </div>
+        </section>
+
+        <section class="github-stats" id="github">
+            <div class="section-header">
+                <span class="section-label">GitHub</span>
+                <h2>GitHub Stats</h2>
+                <p>Activity and open-source contributions</p>
+            </div>
+
+            <div class="github-grid">
+
+                <div class="github-card">
+                    <span class="github-value" id="github-repos">—</span>
+                    <span class="github-name">Repositories</span>
+                </div>
+
+                <div class="github-card">
+                    <span class="github-value" id="github-followers">—</span>
+                    <span class="github-name">Followers</span>
+                </div>
+
+                <div class="github-card">
+                    <span class="github-value" id="github-stars">—</span>
+                    <span class="github-name">Stars</span>
+                </div>
+
+                <div class="github-card">
+                    <span class="github-value" id="github-forks">—</span>
+                    <span class="github-name">Forks</span>
+                </div>
+
+            </div>
+
+            <a
+                    class="github-profile"
+                    href="https://github.com/StavaRachl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+            >
+                <span>View GitHub Profile</span>
+                <span class="github-arrow">↗</span>
+            </a>
+        </section>
+
+
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+
+            <div class="contact-grid">
+
+                <a class="contact-item" href="https://github.com/StavaRachl" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                         alt="GitHub">
+                    <div>
+                        <span class="contact-title">GitHub</span>
+                        <span class="contact-description">@StavaRachl</span>
                     </div>
+                </a>
 
-                    <h2 class="project-title">Weather App</h2>
-                    <p class="project-stack">Java, Maven, Telegram Bots Api, Open Weather Api</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-left">
-                    <i class="fa-solid fa-rocket project-icon"></i>
-                </div>
-
-                <div class="project-right">
-                    <div class="project-links">
-                        <a href="https://github.com/StavaRachl/KspUtils" target="_blank">
-                            GitHub
-                        </a>
+                <a class="contact-item" href="https://t.me/StavaRaChI" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg"
+                         alt="Telegram">
+                    <div>
+                        <span class="contact-title">Telegram</span>
+                        <span class="contact-description">@StavaRaChI</span>
                     </div>
+                </a>
 
-                    <h2 class="project-title">Ksp Utils</h2>
-                    <p class="project-stack">Java, Maven</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-left">
-                    <i class="fa-solid fa-cube project-icon"></i>
-                </div>
-
-                <div class="project-right">
-                    <div class="project-links">
-                        <a href="https://github.com/StavaRachl/falos" target="_blank">
-                            GitHub
-                        </a>
+                <a class="contact-item" href="mailto:zeltysevr121@email.com">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg"
+                         alt="Email">
+                    <div>
+                        <span class="contact-title">Email</span>
+                        <span class="contact-description">zeltysevr121@email.com</span>
                     </div>
+                </a>
 
-                    <h2 class="project-title">Falos Mod</h2>
-                    <p class="project-stack">Java, Gradle, Forge api</p>
-                </div>
             </div>
-        </div>
-    </section>
-</main>
-<footer class="footer">
-    <section id="footer">
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
         <div class="footer-content">
+            <span>© 2026 StavaRaChI</span>
 
-            <div class="footer-socials">
-
+            <div class="footer-links">
                 <a href="https://github.com/StavaRachl" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-
-                <a href="https://www.youtube.com/@stavarachi" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-
-                <a href="https://steamcommunity.com/id/StavaRaChI/" target="_blank">
-                    <i class="fa-brands fa-steam"></i>
-                </a>
-
-                <a href="https://t.me/StavaRaChiii" target="_blank">
-                    <i class="fa-brands fa-telegram"></i>
-                </a>
-
-                <a href="https://vk.com/stavarachiii" target="_blank">
-                    <i class="fa-brands fa-vk"></i>
+                    GitHub
                 </a>
             </div>
-
-            <p class="footer-copy">
-                © 2026 StavaRaChI. All rights reserved.
-            </p>
-
         </div>
-    </section>
-</footer>
+    </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<script>
+    particlesJS.load(
+        'particles-js',
+        'particles.json'
+    );
+</script>
+<script src="index.js"></script>
 </body>
 </html>

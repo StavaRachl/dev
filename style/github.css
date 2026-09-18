@@ -1,0 +1,139 @@
+.github-stats {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 24px;
+}
+
+.section-header {
+    margin-bottom: 32px;
+}
+
+.section-label {
+    display: inline-block;
+    margin-bottom: 10px;
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    opacity: 0.55;
+}
+
+.section-header h2 {
+    margin: 0;
+
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.section-header p {
+    margin: 12px 0 0;
+
+    font-size: 15px;
+    opacity: 0.55;
+}
+
+.github-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.github-card {
+    position: relative;
+
+    min-height: 150px;
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 24px;
+
+    background: rgba(255, 255, 255, 0.055);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.08),
+            0 12px 40px rgba(0, 0, 0, 0.08);
+
+    transition:
+            transform 0.25s ease,
+            border-color 0.25s ease,
+            background 0.25s ease;
+}
+
+.github-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(255, 255, 255, 0.22);
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.github-value {
+    font-size: clamp(32px, 4vw, 46px);
+    font-weight: 700;
+    line-height: 1;
+
+    letter-spacing: -0.05em;
+}
+
+.github-name {
+    font-size: 14px;
+    font-weight: 500;
+
+    opacity: 0.55;
+}
+
+.github-profile {
+    width: fit-content;
+
+    margin-top: 20px;
+    padding: 14px 18px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+
+    color: inherit;
+    text-decoration: none;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    transition:
+            transform 0.2s ease,
+            background 0.2s ease,
+            border-color 0.2s ease;
+}
+
+.github-profile:hover {
+    transform: translateY(-2px);
+
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.github-arrow {
+    font-size: 18px;
+    opacity: 0.6;
+
+    transition: transform 0.2s ease;
+}
+
+.github-profile:hover .github-arrow {
+    transform: translate(2px, -2px);
+}
